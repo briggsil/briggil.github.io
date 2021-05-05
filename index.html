@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>American as Apple Pie</title>
+
+  <!-- don't forget to call all of the stylesheets -->
+  <link href="index_files/bootstrap_002.css" rel="stylesheet" integrity="sha384-C++cugH8+Uf86JbNOnQoBweHHAe/wVKN/mb0lTybu/NZ9sEYbd+BbbYtNpWYAsNP" crossorigin="anonymous">
+  <link rel="stylesheet" href="index_files/bootstrap.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="index_files/leaflet.css">
+
+  <style>
+    #map {width: 100%;height: calc(40vh);}
+    #about {max-height: calc(80vh);overflow-y: scroll;}
+    /* Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) {}
+    /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) {#map {height: calc(60vh);}}
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {#map {height: calc(80vh);}}
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {}
+  </style>
+</head>
+
+<body class="">
+<!-- now that we're in the body of our page, you can see it is broken up into three page sections, which are all held in a fluid div container-->
+
+  <div class="container-fluid">
+    <!-- this section defines the header part of the page, or first 'row'-->
+    <header class="row py-3 bg-primary text-white">
+      <div class="col mx-2">
+        <h1 class="h1">Mass Shootings Across The United States of America</h1>
+      </div>
+    </header>
+
+    <!-- this section defines the 'middle' part of the page, broken up into two parts-->
+    <section class="row bg-light">
+      <!-- first, here's the "about" info section on the left-->
+      <aside id="about" class="col-12 col-md-5 col-lg-4 text-dark py-2">
+        <section>
+          <h2 class="h2 text-dark">About This Map</h2>
+          <p>This map was created with data from The Stanford Mass Shootings of America (MSA) project which can be found at, <a href="https://github.com/StanfordGeospatialCenter/MSA">Stanford MSA Github repository </a>.</p>
+          <p>In the wake of a generational pandemic the United States is beginning to get back to normal.
+             Unfortunately this means a resumption to the epidemic of gun violence in communities across the country, particularly mass shootings.
+              Using data collated from the Stanford Mass Shootings of America (MSA) data project this map displays publicly available data regarding the locations of mass shootings across the U.S. from 1966 onward. In this context mass shootings are defined as an instance of gun violence with three or more victims (not necessarily fatalities) not identified as being related to gang, drug or organized crime scenarios. </p>
+          <p>Inspired by<a href="https://www.cnn.com/2021/04/16/us/mass-shootings-45-one-month/index.html"> this article</a>.</p>
+        </section>
+      </aside>
+
+      <!-- second, here's the map div container, located on the right-->
+      <div class="col-12 col-md-7 col-lg-8 px-0">
+        <div id="map" class="bg-light position-relative leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="outline: currentcolor none medium;"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(3px, -1px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 19; transform: translate3d(264px, 289px, 0px) scale(0.5);"></div><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 20; transform: translate3d(176px, 193px, 0px) scale(1);"><img alt="" role="presentation" src="index_files/320_002.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(8px, 66px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/319_003.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(8px, -190px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/320_003.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(-248px, 66px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/320.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(264px, 66px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/321.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(8px, 322px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/319_002.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(-248px, -190px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/319.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(264px, -190px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/321_004.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(-248px, 322px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/321_002.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(264px, 322px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/318_002.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(8px, -446px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/318_004.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(264px, -446px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/319_004.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(520px, -190px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/320_004.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(520px, 66px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/318_003.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(-248px, -446px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/318.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(520px, -446px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/321_003.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(520px, 322px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/322_004.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(8px, 578px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/322.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(264px, 578px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/322_003.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(-248px, 578px, 0px); opacity: 1;"><img alt="" role="presentation" src="index_files/322_002.html" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(520px, 578px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(129188px, 82048px, 0px) scale(256);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com/" title="A JS library for interactive maps">Leaflet</a> | © <a href="https://stadiamaps.com/">Stadia Maps</a>, © <a href="https://openmaptiles.org/">OpenMapTiles</a> © <a href="http://openstreetmap.org/">OpenStreetMap</a> contributors</div></div></div></div>
+      </div>
+    </section>
+
+    <!-- middle section has ended, now here's the page footer-->
+    <footer class="row bg-primary text-white py-3">
+      <div class="col mx-2">
+        <ul class="list-unstyled">
+          <li>Ian Briggs</li>
+          <li>May 5th, 2021</li>
+          <li><a href="#">https://github.com/briggsil/GHY3814FINAL</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div> <!-- end of fluid container -->
+
+  <!--don't forget to call all of the necessary JS libraries -->
+  <script src="index_files/jquery-3.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="index_files/popper.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="index_files/bootstrap.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="index_files/leaflet_002.js"></script>
+  <script src="index_files/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+ <script src="Stanford_MSA_Database.js"></script>
+  <!-- and then you can begin writing your JS for the map -->
+  <script>
+var data= L.geoJson(data).addto(map);
+  //JS map code goes here
+  var map = L.map('map', {
+      center: [35, -95],
+      zoom: 3.4
+  });
+
+  var Stadia_Outdoors = L.tileLayer('https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png', {
+	maxZoom: 20,
+	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+}).addTo(map);
+  </script>
+
+
+
+</body></html>
